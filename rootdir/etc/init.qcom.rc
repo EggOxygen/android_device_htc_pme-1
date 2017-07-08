@@ -71,6 +71,7 @@ on init
 
 on fs
     mount_all fstab.qcom
+    swapon_all fstab.qcom
 
     # Add rfg_3 mounting from stock. This way we will still boot if partition doesn't actually exist on the device.
     mkdir /firmware/wsd 0500 rfs rfs
